@@ -26,3 +26,14 @@ When you're done with that, simply run:
 go run vbc/main.go
 ```
 
+## Supported Features
+As of the latest commit [_citation needed_], VBC can repost statuses with the
+following content:
+- [X] Text: HTML from Mastodon is rendered to plain text using 
+[html2text](https://github.com/jaytaylor/html2text), and then posted to Bluesky.
+- [X] Links (Partial): Links in the original post will be reposted as text. They 
+will be there, but you won't get any link information along with your Bluesky 
+post.
+- [ ] Media: Posts containing media attachments will not be reposted at all.
+
+
